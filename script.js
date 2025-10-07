@@ -84,13 +84,17 @@ unitButton.addEventListener("click", function () {
         console.log(unitValue / 1000);
         unitDisplay.textContent = `${unitValue} ${unitFrom} er det samme som ${unitValue / 1000} ${unitTo}`
     } else if (unitFrom === "CM" && unitTo === "MM") {
-        // CM til MM konventering
+        console.log(unitValue * 10);
+        unitDisplay.textContent = `${unitValue} ${unitFrom} er det samme som ${unitValue * 10} ${unitTo}`;
     } else if (unitFrom === "CM" && unitTo === "M") {
-        // CM til M konventering
+        console.log(unitValue / 100);
+        unitDisplay.textContent = `${unitValue} ${unitFrom} er det samme som ${unitValue / 100} ${unitTo}`;
     } else if (unitFrom === "M" && unitTo === "MM") {
-        // M til MM konventering
+        console.log(unitValue * 1000);
+        unitDisplay.textContent = `${unitValue} ${unitFrom} er det samme som ${unitValue * 1000} ${unitTo}`;
     } else if (unitFrom === "M" && unitTo === "CM") {
-        // M til CM konventering
+        console.log(unitValue * 100);
+        unitDisplay.textContent = `${unitValue} ${unitFrom} er det samme som ${unitValue * 100} ${unitTo}`;
     } else if ( (unitFrom === "MM" && unitTo === "MM") || (unitFrom === "CM" && unitTo === "CM") || (unitFrom === "M" && unitTo === "M") ) {
         console.log("Velg to målenheter som ikke er like")
     } else {
